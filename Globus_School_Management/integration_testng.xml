@@ -3,17 +3,17 @@
 <suite name="Suite">
 	<groups>
 		<run>
-			<include name="integration" />
+			<include name="integration"/>
 		</run>
 	</groups>
 	<test name="Test">
 		<classes>
 			<class
-				name="com.globus_sm.student.LibraryManagementTest" />
+				name="com.globus_sm.student.LibraryManagementTest"/>
 			<class
-				name="com.globus_sm.teacher.CreateTimeTableTest" />
+				name="com.globus_sm.teacher.CreateTimeTableTest"/>
 			<class
-				name="com.globus_sm.teacher.CreateRubricsThrLMSTest" />
+				name="com.globus_sm.teacher.CreateRubricsThrLMSTest"/>
 
 		</classes>
 	</test> <!--
