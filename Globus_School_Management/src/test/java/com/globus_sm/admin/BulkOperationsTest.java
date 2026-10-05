@@ -29,8 +29,7 @@ public void bulkOperationsTest() throws EncryptedDocumentException, IOException,
 		WebDriverUtility util=new WebDriverUtility(driver);
 		DashboardPage dp=new DashboardPage(driver);
 		Thread.sleep(4000);
-		util.mouseHover(dp.getBulk());
-		util.click(dp.getBulk());
+		util.waitForVisibility(dp.getBulk()).click();
 		BulkOperationsPage bp=new BulkOperationsPage(driver);
 		bp.importRecordsInBulkOp();
 		String actual=util.waitForVisibility(bp.getImportComplt()).getText();
