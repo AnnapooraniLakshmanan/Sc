@@ -1,5 +1,6 @@
 package object_repository_utility;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -49,7 +50,7 @@ public class StudentPage {
 	{
 		util=new WebDriverUtility(driver);
 		util.waitForVisibility(searchStuNmBar).sendKeys(fn);
-		String adminNo=util.waitForVisibility(stuAdmNo).getText();
+		String adminNo=util.waitForVisibility(driver.findElement(By.xpath("//table/tbody/tr/td[starts-with(.,'"+fn+"')]/preceding-sibling::td[1]"))).getText();
 		return adminNo;
 	}
 

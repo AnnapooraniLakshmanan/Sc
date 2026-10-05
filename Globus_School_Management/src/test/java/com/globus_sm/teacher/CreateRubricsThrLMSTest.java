@@ -51,19 +51,20 @@ public class CreateRubricsThrLMSTest extends BaseClass {
 		JavaUtility ju = new JavaUtility();
 		int data = ju.generateRandomNumber();
 		String adno = ex.readDataFromExcel("Sheet1", 12, 0) + data;
-		String fn = ex.readDataFromExcel("Sheet1", 12, 1) + data;
+		String fnn = ex.readDataFromExcel("Sheet1", 12, 1) + data;
 		String ln = ex.readDataFromExcel("Sheet1", 12, 2);
 		String email = ex.readDataFromExcel("Sheet1", 12, 3);
 		String dob = ex.readDataFromExcel("Sheet1", 12, 4);
 		String gender = ex.readDataFromExcel("Sheet1", 12, 5);
 		String cls = ex.readDataFromExcel("Sheet1", 12, 6);
 		String sec = ex.readDataFromExcel("Sheet1", 12, 7);
-		ap.addNewStudent(adno, fn, ln, email, dob, gender, cls, sec);
+		ap.addNewStudent(adno, fnn, ln, email, dob, gender, cls, sec);
 
 		// search the stu name and get the admission number
 
 		StudentPage sp = new StudentPage(driver);
 		Thread.sleep(4000);
+		String fn = ex.readDataFromExcel("Sheet1", 12, 1);
 		String adminNo = sp.getStuAdmisNo(fn);
 
 	    //go to lms,click rubrics,select the newly created rubrics

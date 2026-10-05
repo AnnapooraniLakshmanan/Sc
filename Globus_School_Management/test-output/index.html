@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Dell\AppData\Local\Temp\testng-eclipse--1592390000\testng-customsuite.xml</span>
+                    <span>C:\Users\Dell\AppData\Local\Temp\testng-eclipse--1830355591\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.globus_sm.teacher.TeacherSystemTest" class="method navigator-link" hash-for-method="teacherSystemTest">teacherSystemTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.globus_sm.admin.BulkOperationsTest" class="method navigator-link" hash-for-method="bulkOperationsTest">bulkOperationsTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -121,37 +121,21 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.globus_sm.teacher.TeacherSystemTest</span>
+              <span class="class-name">com.globus_sm.admin.BulkOperationsTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="teacherSystemTest">
-                  </a> <!-- teacherSystemTest -->
-                  <span class="method-name">teacherSystemTest</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;flex items-center gap-3 px-3 py-2 rounded-md text-sm transition-colors text-muted-foreground hover:bg-muted&quot; href=&quot;/diary&quot;&gt;...&lt;/a&gt; is not clickable at point (127, 571). Other element would receive the click: &lt;div class=&quot;fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=130.0.6723.70)
-Build info: version: &apos;4.43.0&apos;, revision: &apos;dd0f534&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2ec0e863b87384af542e3b72b5e109cc, clickElement {id=f.CD39DBF2FE2E0E8BF49E24CD8F067D18.d.DB33F9BCDB4A0584AAE3FCA12D137935.e.159}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.70, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58017}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58017/devtoo..., se:cdpVersion: 130.0.6723.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (2ec0e863b87384af542e3b72b5e109cc)] -&gt; xpath: //a[@href=&apos;/diary&apos;]]
-Session ID: 2ec0e863b87384af542e3b72b5e109cc
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
-	at com.globus_sm.teacher.TeacherSystemTest.teacherSystemTest(TeacherSystemTest.java:63)
+                  <a name="bulkOperationsTest">
+                  </a> <!-- bulkOperationsTest -->
+                  <span class="method-name">bulkOperationsTest</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //button[text()=&apos;Use Template&apos;]&apos;
+(tried for 10 seconds with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at generic_webdriverUtility.WebDriverUtility.waitForVisibility(WebDriverUtility.java:96)
+	at object_repository_utility.BulkOperationsPage.importRecordsInBulkOp(BulkOperationsPage.java:50)
+	at com.globus_sm.admin.BulkOperationsTest.bulkOperationsTest(BulkOperationsTest.java:35)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -178,6 +162,34 @@ Session ID: 2ec0e863b87384af542e3b72b5e109cc
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&apos;Use Template&apos;]&quot;}
+  (Session info: chrome=130.0.6723.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.43.0&apos;, revision: &apos;dd0f534&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [038a8551fe6772e421fb06435f73c4da, findElement {value=//button[text()=&apos;Use Template&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.70, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62531}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62531/devtoo..., se:cdpVersion: 130.0.6723.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 038a8551fe6772e421fb06435f73c4da
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:365)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:351)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:348)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:210)
+	... 29 more
 
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -187,7 +199,7 @@ Session ID: 2ec0e863b87384af542e3b72b5e109cc
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Dell\AppData\Local\Temp\testng-eclipse--1592390000\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Dell\AppData\Local\Temp\testng-eclipse--1830355591\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -196,7 +208,7 @@ Session ID: 2ec0e863b87384af542e3b72b5e109cc
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.globus_sm.teacher.TeacherSystemTest&quot;/&gt;
+      &lt;class name=&quot;com.globus_sm.admin.BulkOperationsTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -221,10 +233,10 @@ Session ID: 2ec0e863b87384af542e3b72b5e109cc
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
-              <span class="test-group-name">system</span>
+              <span class="test-group-name">smoke</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">teacherSystemTest</span>
+                <span class="method-in-group-name">bulkOperationsTest</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -246,14 +258,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'teacherSystemTest')
-data.setCell(0, 2, 'com.globus_sm.teacher.TeacherSystemTest')
-data.setCell(0, 3, 40817);
+data.setCell(0, 1, 'bulkOperationsTest')
+data.setCell(0, 2, 'com.globus_sm.admin.BulkOperationsTest')
+data.setCell(0, 3, 15074);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 40 seconds</span>
+              <span class="suite-total-time">Total running time: 15 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -264,17 +276,6 @@ return data;
             <span class="header-content">Reporter output for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">teacherSystemTest</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">No of Teachers before creating a new staff 15</span>
-                <span class="reporter-method-output">No of Teachers after creating a new staff 16</span>
-                <span class="reporter-method-output">No of ID before creating a new ID 39 card(s)</span>
-                <span class="reporter-method-output">No of ID after creating a new ID 40 card(s)</span>
-                <span class="reporter-method-output">No of assignments before creating a new assignment15</span>
-                <span class="reporter-method-output">No of assignments after creating a new assignment15</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
@@ -290,27 +291,29 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.globus_sm.teacher.TeacherSystemTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.globus_sm.admin.BulkOperationsTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">browserLaunching</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApp</span>
-                <span class="method-start">2708 ms</span>
+                <span class="method-start">3097 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">teacherSystemTest</span>
-                <span class="method-start">6142 ms</span>
+                <span class="method-name">bulkOperationsTest</span>
+                <span class="method-start">8166 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">logoutFromApp</span>
-                <span class="method-start">47150 ms</span>
+                <span class="method-start">23429 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">browserClosing</span>
+                <span class="method-start">23871 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
