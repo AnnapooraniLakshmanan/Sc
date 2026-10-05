@@ -2,47 +2,59 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[actual is Book]]>
+      <![CDATA[Sec count bfr creating a stu 23/40 students]]>
     </line>
     <line>
-      <![CDATA[title is MyStory158]]>
+      <![CDATA[Sec count aftr creating a stu 23/40 students]]>
+    </line>
+    <line>
+      <![CDATA[Room count bfr alloacting a stu 2/4 beds]]>
+    </line>
+    <line>
+      <![CDATA[Room count aftr alloacting a stu 3/4 beds]]>
     </line>
   </reporter-output>
-  <suite started-at="2026-10-05T15:33:44 IST" name="Default suite" finished-at="2026-10-05T15:34:01 IST" duration-ms="16923">
+  <suite started-at="2026-10-05T15:43:50 IST" name="Default suite" finished-at="2026-10-05T15:44:38 IST" duration-ms="48163">
     <groups>
-      <group name="integration">
-        <method signature="LibraryManagementTest.libraryManagementTest()[pri:0, instance:com.globus_sm.student.LibraryManagementTest@4c12331b]" name="libraryManagementTest" class="com.globus_sm.student.LibraryManagementTest"/>
-      </group> <!-- integration -->
+      <group name="system">
+        <method signature="StudentSystemTest.studentSystemTest()[pri:0, instance:com.globus_sm.student.StudentSystemTest@4c12331b]" name="studentSystemTest" class="com.globus_sm.student.StudentSystemTest"/>
+      </group> <!-- system -->
     </groups>
-    <test started-at="2026-10-05T15:33:44 IST" name="Default test" finished-at="2026-10-05T15:34:01 IST" duration-ms="16923">
-      <class name="com.globus_sm.student.LibraryManagementTest">
-        <test-method is-config="true" signature="browserLaunching()[pri:0, instance:com.globus_sm.student.LibraryManagementTest@4c12331b]" started-at="2026-10-05T15:33:44 IST" name="browserLaunching" finished-at="2026-10-05T15:33:47 IST" duration-ms="2916" status="PASS">
+    <test started-at="2026-10-05T15:43:50 IST" name="Default test" finished-at="2026-10-05T15:44:38 IST" duration-ms="48163">
+      <class name="com.globus_sm.student.StudentSystemTest">
+        <test-method is-config="true" signature="browserLaunching()[pri:0, instance:com.globus_sm.student.StudentSystemTest@4c12331b]" started-at="2026-10-05T15:43:50 IST" name="browserLaunching" finished-at="2026-10-05T15:43:52 IST" duration-ms="2745" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserLaunching -->
-        <test-method is-config="true" signature="loginToApp()[pri:0, instance:com.globus_sm.student.LibraryManagementTest@4c12331b]" started-at="2026-10-05T15:33:47 IST" name="loginToApp" finished-at="2026-10-05T15:33:51 IST" duration-ms="4026" status="PASS">
+        <test-method is-config="true" signature="loginToApp()[pri:0, instance:com.globus_sm.student.StudentSystemTest@4c12331b]" started-at="2026-10-05T15:43:52 IST" name="loginToApp" finished-at="2026-10-05T15:43:57 IST" duration-ms="4998" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApp -->
-        <test-method signature="libraryManagementTest()[pri:0, instance:com.globus_sm.student.LibraryManagementTest@4c12331b]" started-at="2026-10-05T15:33:51 IST" name="libraryManagementTest" finished-at="2026-10-05T15:34:01 IST" duration-ms="9083" status="PASS">
+        <test-method signature="studentSystemTest()[pri:0, instance:com.globus_sm.student.StudentSystemTest@4c12331b]" started-at="2026-10-05T15:43:57 IST" name="studentSystemTest" finished-at="2026-10-05T15:44:37 IST" duration-ms="39565" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[actual is Book]]>
+              <![CDATA[Sec count bfr creating a stu 23/40 students]]>
             </line>
             <line>
-              <![CDATA[title is MyStory158]]>
+              <![CDATA[Sec count aftr creating a stu 23/40 students]]>
+            </line>
+            <line>
+              <![CDATA[Room count bfr alloacting a stu 2/4 beds]]>
+            </line>
+            <line>
+              <![CDATA[Room count aftr alloacting a stu 3/4 beds]]>
             </line>
           </reporter-output>
-        </test-method> <!-- libraryManagementTest -->
-        <test-method is-config="true" signature="logoutFromApp()[pri:0, instance:com.globus_sm.student.LibraryManagementTest@4c12331b]" started-at="2026-10-05T15:34:01 IST" name="logoutFromApp" finished-at="2026-10-05T15:34:01 IST" duration-ms="401" status="PASS">
+        </test-method> <!-- studentSystemTest -->
+        <test-method is-config="true" signature="logoutFromApp()[pri:0, instance:com.globus_sm.student.StudentSystemTest@4c12331b]" started-at="2026-10-05T15:44:37 IST" name="logoutFromApp" finished-at="2026-10-05T15:44:37 IST" duration-ms="347" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutFromApp -->
-        <test-method is-config="true" signature="browserClosing()[pri:0, instance:com.globus_sm.student.LibraryManagementTest@4c12331b]" started-at="2026-10-05T15:34:01 IST" name="browserClosing" finished-at="2026-10-05T15:34:01 IST" duration-ms="398" status="PASS">
+        <test-method is-config="true" signature="browserClosing()[pri:0, instance:com.globus_sm.student.StudentSystemTest@4c12331b]" started-at="2026-10-05T15:44:37 IST" name="browserClosing" finished-at="2026-10-05T15:44:38 IST" duration-ms="421" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserClosing -->
-      </class> <!-- com.globus_sm.student.LibraryManagementTest -->
+      </class> <!-- com.globus_sm.student.StudentSystemTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

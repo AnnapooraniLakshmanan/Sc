@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 
 import generic_baseClass.BaseClass;
 import generic_fileUtility.ExcelUtility;
+import generic_webdriverUtility.JavaUtility;
 import generic_webdriverUtility.WebDriverUtility;
 import object_repository_utility.AddNewStudentPage;
 import object_repository_utility.AdmissionPage;
@@ -67,7 +68,9 @@ public class StudentSystemTest extends BaseClass{
 		/*Create a student in student page for the same enrolled stu*/
 		util.waitForVisibility(dp.getStudents()).click();
 		AddNewStudentPage asp = new AddNewStudentPage(driver);
-		String  admno= ex.readDataFromExcel("Sheet1",22 ,0 );
+		JavaUtility ju=new JavaUtility();
+		int data=ju.generateRandomNumber();
+		String  admno= ex.readDataFromExcel("Sheet1",22 ,0 )+data;
 		String  email= ex.readDataFromExcel("Sheet1",22 ,1 );
 		String  sec= ex.readDataFromExcel("Sheet1",22 ,2 );
 		asp.addNewStudent(admno, fn, ln, email, dob, gen, cls, sec);

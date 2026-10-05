@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Dell\AppData\Local\Temp\testng-eclipse-289193733\testng-customsuite.xml</span>
+                    <span>C:\Users\Dell\AppData\Local\Temp\testng-eclipse--139710990\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.globus_sm.student.LibraryManagementTest" class="method navigator-link" hash-for-method="libraryManagementTest">libraryManagementTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.globus_sm.student.StudentSystemTest" class="method navigator-link" hash-for-method="studentSystemTest">studentSystemTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -121,14 +121,14 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.globus_sm.student.LibraryManagementTest</span>
+              <span class="class-name">com.globus_sm.student.StudentSystemTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="libraryManagementTest">
-                  </a> <!-- libraryManagementTest -->
-                  <span class="method-name">libraryManagementTest</span>
+                  <a name="studentSystemTest">
+                  </a> <!-- studentSystemTest -->
+                  <span class="method-name">studentSystemTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -136,7 +136,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Dell\AppData\Local\Temp\testng-eclipse-289193733\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Dell\AppData\Local\Temp\testng-eclipse--139710990\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -145,7 +145,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.globus_sm.student.LibraryManagementTest&quot;/&gt;
+      &lt;class name=&quot;com.globus_sm.student.StudentSystemTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -170,10 +170,10 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
-              <span class="test-group-name">integration</span>
+              <span class="test-group-name">system</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">libraryManagementTest</span>
+                <span class="method-in-group-name">studentSystemTest</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -195,14 +195,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'libraryManagementTest')
-data.setCell(0, 2, 'com.globus_sm.student.LibraryManagementTest')
-data.setCell(0, 3, 9083);
+data.setCell(0, 1, 'studentSystemTest')
+data.setCell(0, 2, 'com.globus_sm.student.StudentSystemTest')
+data.setCell(0, 3, 39565);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 39 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -214,10 +214,12 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">libraryManagementTest</span>
+              <span class="reporter-method-name">studentSystemTest</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">actual is Book</span>
-                <span class="reporter-method-output">title is MyStory158</span>
+                <span class="reporter-method-output">Sec count bfr creating a stu 23/40 students</span>
+                <span class="reporter-method-output">Sec count aftr creating a stu 23/40 students</span>
+                <span class="reporter-method-output">Room count bfr alloacting a stu 2/4 beds</span>
+                <span class="reporter-method-output">Room count aftr alloacting a stu 3/4 beds</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -235,26 +237,26 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.globus_sm.student.LibraryManagementTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.globus_sm.student.StudentSystemTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">browserLaunching</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApp</span>
-                <span class="method-start">2941 ms</span>
+                <span class="method-start">2769 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">libraryManagementTest</span>
-                <span class="method-start">6968 ms</span>
+                <span class="method-name">studentSystemTest</span>
+                <span class="method-start">7768 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logoutFromApp</span>
-                <span class="method-start">16064 ms</span>
+                <span class="method-start">47339 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">browserClosing</span>
-                <span class="method-start">16473 ms</span>
+                <span class="method-start">47690 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

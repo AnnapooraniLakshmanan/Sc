@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.globus_sm.student.LibraryManagementTest">
+      <class name="com.globus_sm.student.StudentSystemTest">
         <methods>
-          <include name="libraryManagementTest"/>
+          <include name="studentSystemTest"/>
           <include name="browserClosing"/>
           <include name="browserLaunching"/>
           <include name="loginToApp"/>
           <include name="logoutFromApp"/>
         </methods>
-      </class> <!-- com.globus_sm.student.LibraryManagementTest -->
+      </class> <!-- com.globus_sm.student.StudentSystemTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
