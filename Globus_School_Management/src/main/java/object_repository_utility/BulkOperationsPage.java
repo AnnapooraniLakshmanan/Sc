@@ -46,6 +46,7 @@ public class BulkOperationsPage {
 
 	public void importRecordsInBulkOp() throws InterruptedException {
 		webutil = new WebDriverUtility(driver);
+		driver.navigate().to("https://globuslms.globusdemos.com/bulk-operations");
 		webutil.waitForVisibility(SmplJSONData).click();
         webutil.waitForVisibility(useTemplateBtn).click();
 		webutil.waitForClickable(importBtn).click();

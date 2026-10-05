@@ -1,185 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[No of Teachers before creating a new staff 19]]>
-    </line>
-    <line>
-      <![CDATA[No of Teachers after creating a new staff 19]]>
-    </line>
   </reporter-output>
-  <suite started-at="2026-10-05T16:05:47 IST" name="Default suite" finished-at="2026-10-05T16:06:07 IST" duration-ms="20382">
+  <suite started-at="2026-10-05T17:20:11 IST" name="Default suite" finished-at="2026-10-05T17:20:23 IST" duration-ms="11662">
     <groups>
-      <group name="system">
-        <method signature="TeacherSystemTest.teacherSystemTest()[pri:0, instance:com.globus_sm.teacher.TeacherSystemTest@4c12331b]" name="teacherSystemTest" class="com.globus_sm.teacher.TeacherSystemTest"/>
-      </group> <!-- system -->
+      <group name="smoke">
+        <method signature="BulkOperationsTest.bulkOperationsTest()[pri:0, instance:com.globus_sm.admin.BulkOperationsTest@4c12331b]" name="bulkOperationsTest" class="com.globus_sm.admin.BulkOperationsTest"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2026-10-05T16:05:47 IST" name="Default test" finished-at="2026-10-05T16:06:07 IST" duration-ms="20382">
-      <class name="com.globus_sm.teacher.TeacherSystemTest">
-        <test-method is-config="true" signature="browserLaunching()[pri:0, instance:com.globus_sm.teacher.TeacherSystemTest@4c12331b]" started-at="2026-10-05T16:05:47 IST" name="browserLaunching" finished-at="2026-10-05T16:05:50 IST" duration-ms="2926" status="PASS">
+    <test started-at="2026-10-05T17:20:11 IST" name="Default test" finished-at="2026-10-05T17:20:23 IST" duration-ms="11662">
+      <class name="com.globus_sm.admin.BulkOperationsTest">
+        <test-method is-config="true" signature="browserLaunching()[pri:0, instance:com.globus_sm.admin.BulkOperationsTest@4c12331b]" started-at="2026-10-05T17:20:11 IST" name="browserLaunching" finished-at="2026-10-05T17:20:14 IST" duration-ms="2585" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserLaunching -->
-        <test-method is-config="true" signature="loginToApp()[pri:0, instance:com.globus_sm.teacher.TeacherSystemTest@4c12331b]" started-at="2026-10-05T16:05:50 IST" name="loginToApp" finished-at="2026-10-05T16:05:55 IST" duration-ms="5096" status="PASS">
+        <test-method is-config="true" signature="loginToApp()[pri:0, instance:com.globus_sm.admin.BulkOperationsTest@4c12331b]" started-at="2026-10-05T17:20:14 IST" name="loginToApp" finished-at="2026-10-05T17:20:20 IST" duration-ms="5796" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApp -->
-        <test-method signature="teacherSystemTest()[pri:0, instance:com.globus_sm.teacher.TeacherSystemTest@4c12331b]" started-at="2026-10-05T16:05:55 IST" name="teacherSystemTest" finished-at="2026-10-05T16:06:05 IST" duration-ms="10757" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <a class="flex items-center gap-3 px-3 py-2 rounded-md text-sm transition-colors text-muted-foreground hover:bg-muted" href="/id-cards">...</a> is not clickable at point (127, 571). Other element would receive the click: <div class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">...</div>
-  (Session info: chrome=130.0.6723.70)
-Build info: version: '4.43.0', revision: 'dd0f534'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d73d48a0007280e355aa07f128b98748, clickElement {id=f.71CE0BAE2D6B03193739ECAF5D4C1DC2.d.AC77A14EE252A90F9E7647EE7EFE4008.e.72}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.70, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51135}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51135/devtoo..., se:cdpVersion: 130.0.6723.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (d73d48a0007280e355aa07f128b98748)] -> xpath: //a[@href='/id-cards']]
-Session ID: d73d48a0007280e355aa07f128b98748]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="flex items-center gap-3 px-3 py-2 rounded-md text-sm transition-colors text-muted-foreground hover:bg-muted" href="/id-cards">...</a> is not clickable at point (127, 571). Other element would receive the click: <div class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">...</div>
-  (Session info: chrome=130.0.6723.70)
-Build info: version: '4.43.0', revision: 'dd0f534'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d73d48a0007280e355aa07f128b98748, clickElement {id=f.71CE0BAE2D6B03193739ECAF5D4C1DC2.d.AC77A14EE252A90F9E7647EE7EFE4008.e.72}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.70, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51135}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51135/devtoo..., se:cdpVersion: 130.0.6723.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (d73d48a0007280e355aa07f128b98748)] -> xpath: //a[@href='/id-cards']]
-Session ID: d73d48a0007280e355aa07f128b98748
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
-at com.globus_sm.teacher.TeacherSystemTest.teacherSystemTest(TeacherSystemTest.java:45)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+        <test-method signature="bulkOperationsTest()[pri:0, instance:com.globus_sm.admin.BulkOperationsTest@4c12331b]" started-at="2026-10-05T17:20:20 IST" name="bulkOperationsTest" finished-at="2026-10-05T17:20:22 IST" duration-ms="2550" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[No of Teachers before creating a new staff 19]]>
-            </line>
-            <line>
-              <![CDATA[No of Teachers after creating a new staff 19]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- teacherSystemTest -->
-        <test-method is-config="true" signature="logoutFromApp()[pri:0, instance:com.globus_sm.teacher.TeacherSystemTest@4c12331b]" started-at="2026-10-05T16:06:06 IST" name="logoutFromApp" finished-at="2026-10-05T16:06:07 IST" duration-ms="1376" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <button class="flex items-center gap-3 px-3 py-2 rounded-md text-sm text-muted-foreground hover:bg-muted w-full">...</button> is not clickable at point (127, 571). Other element would receive the click: <div class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">...</div>
-  (Session info: chrome=130.0.6723.70)
-Build info: version: '4.43.0', revision: 'dd0f534'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d73d48a0007280e355aa07f128b98748, clickElement {id=f.71CE0BAE2D6B03193739ECAF5D4C1DC2.d.AC77A14EE252A90F9E7647EE7EFE4008.e.74}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.70, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51135}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51135/devtoo..., se:cdpVersion: 130.0.6723.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (d73d48a0007280e355aa07f128b98748)] -> xpath: //button[text()='Sign Out']]
-Session ID: d73d48a0007280e355aa07f128b98748]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="flex items-center gap-3 px-3 py-2 rounded-md text-sm text-muted-foreground hover:bg-muted w-full">...</button> is not clickable at point (127, 571). Other element would receive the click: <div class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">...</div>
-  (Session info: chrome=130.0.6723.70)
-Build info: version: '4.43.0', revision: 'dd0f534'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d73d48a0007280e355aa07f128b98748, clickElement {id=f.71CE0BAE2D6B03193739ECAF5D4C1DC2.d.AC77A14EE252A90F9E7647EE7EFE4008.e.74}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.70, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51135}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51135/devtoo..., se:cdpVersion: 130.0.6723.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (d73d48a0007280e355aa07f128b98748)] -> xpath: //button[text()='Sign Out']]
-Session ID: d73d48a0007280e355aa07f128b98748
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
-at generic_webdriverUtility.WebDriverUtility.click(WebDriverUtility.java:141)
-at object_repository_utility.DashboardPage.signout(DashboardPage.java:211)
-at generic_baseClass.BaseClass.logoutFromApp(BaseClass.java:67)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:802)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:778)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+        </test-method> <!-- bulkOperationsTest -->
+        <test-method is-config="true" signature="logoutFromApp()[pri:0, instance:com.globus_sm.admin.BulkOperationsTest@4c12331b]" started-at="2026-10-05T17:20:22 IST" name="logoutFromApp" finished-at="2026-10-05T17:20:23 IST" duration-ms="399" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutFromApp -->
-        <test-method is-config="true" signature="browserClosing()[pri:0, instance:com.globus_sm.teacher.TeacherSystemTest@4c12331b]" started-at="2026-10-05T16:06:07 IST" name="browserClosing" finished-at="2026-10-05T16:06:07 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="browserClosing()[pri:0, instance:com.globus_sm.admin.BulkOperationsTest@4c12331b]" started-at="2026-10-05T17:20:23 IST" name="browserClosing" finished-at="2026-10-05T17:20:23 IST" duration-ms="253" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserClosing -->
-      </class> <!-- com.globus_sm.teacher.TeacherSystemTest -->
+      </class> <!-- com.globus_sm.admin.BulkOperationsTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

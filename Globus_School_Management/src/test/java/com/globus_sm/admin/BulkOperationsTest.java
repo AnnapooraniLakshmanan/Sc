@@ -13,7 +13,6 @@ import generic_baseClass.BaseClass;
 import generic_webdriverUtility.UtilityClassObj;
 import generic_webdriverUtility.WebDriverUtility;
 import object_repository_utility.BulkOperationsPage;
-import object_repository_utility.DashboardPage;
 
 @Listeners(generic_listenerUtility.ListenerImp.class)
 public class BulkOperationsTest extends BaseClass
@@ -27,9 +26,6 @@ public void bulkOperationsTest() throws EncryptedDocumentException, IOException,
 	 */ 
 		
 		WebDriverUtility util=new WebDriverUtility(driver);
-		DashboardPage dp=new DashboardPage(driver);
-		Thread.sleep(4000);
-		util.waitForVisibility(dp.getBulk()).click();
 		BulkOperationsPage bp=new BulkOperationsPage(driver);
 		bp.importRecordsInBulkOp();
 		String actual=util.waitForVisibility(bp.getImportComplt()).getText();
