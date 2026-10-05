@@ -28,7 +28,7 @@ public class BaseClass {
 	
 
 	//@Parameters("BROWSER")
-	@BeforeClass(groups = { "smoke", "regression" })
+	@BeforeClass(groups = { "smoke", "integration","system" })
 	
 	public void browserLaunching() throws IOException {
 		String browser =prop.getDataFromProperties("browser");
@@ -46,14 +46,14 @@ public class BaseClass {
 
 	}
 
-	@AfterClass(groups = { "smoke", "regression" })
+	@AfterClass(groups = { "smoke", "integration","system" })
 	public void browserClosing() {
 		driver.quit();
 		
 
 	}
 
-	@BeforeMethod(groups = { "smoke", "regression" })
+	@BeforeMethod(groups = { "smoke", "integration","system" })
 	public void loginToApp() throws IOException {
 		LoginPage lp=new LoginPage(driver);
 		String url =prop.getDataFromProperties("url");
@@ -61,7 +61,7 @@ public class BaseClass {
 
 	}
 
-	@AfterMethod(groups = { "smoke", "regression" })
+	@AfterMethod(groups = { "smoke", "integration","system" })
 	public void logoutFromApp() throws InterruptedException {
 		DashboardPage dp=new DashboardPage(driver);
 		dp.signout();
