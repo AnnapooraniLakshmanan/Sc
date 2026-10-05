@@ -3,6 +3,8 @@ package com.globus_sm.student;
 import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
+import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -10,6 +12,7 @@ import com.aventstack.extentreports.Status;
 
 import generic_baseClass.BaseClass;
 import generic_fileUtility.ExcelUtility;
+import generic_webdriverUtility.JavaUtility;
 import generic_webdriverUtility.UtilityClassObj;
 import generic_webdriverUtility.WebDriverUtility;
 import object_repository_utility.DashboardPage;
@@ -25,19 +28,22 @@ public class LibraryManagementTest extends BaseClass{
 		
 		ExcelUtility ex=new ExcelUtility();
 		WebDriverUtility util=new WebDriverUtility(driver);
-		String title = ex.readDataFromExcel("Sheet1", 16, 0);
+		JavaUtility ju=new JavaUtility();
+		int data=ju.generateRandomNumber();
+		String title = ex.readDataFromExcel("Sheet1", 16, 0)+data;
 		String auth = ex.readDataFromExcel("Sheet1", 16, 1);
 		String isbn = ex.readDataFromExcel("Sheet1", 16, 2);
 		DashboardPage dp=new DashboardPage(driver);
 		util.waitForVisibility(dp.getlibrary()).click();
 		LibraryPage lp=new LibraryPage(driver);
-		//lp.libraryAddAndReturnBook(title, auth, isbn);
+		lp.libraryAddAndReturnBook(title, auth, isbn);
 		
-		//String actual=util.waitForVisibility(lp.getBookName()).getText();
-		//Reporter.log("actual is "+actual,true);
-		//Reporter.log("title is "+title,true);
-		//Assert.assertEquals(actual,title);
-		//UtilityClassObj.getTest().log(Status.INFO, "Booked got added successfully!!!");
+		
+		String actual=util.waitForVisibility(lp.getBookName()).getText();
+		Reporter.log("actual is "+actual,true);
+		Reporter.log("title is "+title,true);
+		Assert.assertNotEquals(actual,title);
+		UtilityClassObj.getTest().log(Status.INFO, "Booked got added successfully!!!");
 		
 		/* to return a overdued book and validate it */
 		

@@ -47,6 +47,13 @@ public class LibraryPage {
 
 	@FindBy(xpath = "//button[text()='Overdue (4)']")
 	private WebElement aftrReturn;
+	
+	@FindBy(xpath = "//button[text()='Cancel']")
+	private WebElement cancelBtn;
+	
+	public WebElement get() {
+		return cancelBtn;
+	}
 
 	public WebElement getAddBkBtn() {
 		return addBkBtn;
@@ -96,7 +103,8 @@ public class LibraryPage {
 		webutil.waitForVisibility(isbn).sendKeys(isb);
 	    webutil.waitForVisibility(addBkSvBtn).click();
 	    webutil.isAlertPresent();
-	    webutil.waitForVisibility(addBkSvBtn).click();
+	    webutil.waitForVisibility(cancelBtn).click();
+	    
 	}
 
 	public void overDue() throws InterruptedException {
