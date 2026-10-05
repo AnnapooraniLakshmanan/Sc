@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-09-18T15:24:37 IST" name="Suite" finished-at="2026-09-18T15:26:11 IST" duration-ms="94691">
+    <groups>
+      <group name="regression">
+        <method signature="CreateOrganizationWithIndustriesTest.createOrganizationWithIndustriesTest()[pri:0, instance:com.vitiger_crm.Orgtest.CreateOrganizationWithIndustriesTest@a514af7]" name="createOrganizationWithIndustriesTest" class="com.vitiger_crm.Orgtest.CreateOrganizationWithIndustriesTest"/>
+        <method signature="CreateOrganizationWithPhoneNumberTest.createOrganizationWithPhoneNumbeTest()[pri:0, instance:com.vitiger_crm.Orgtest.CreateOrganizationWithPhoneNumberTest@6b927fb]" name="createOrganizationWithPhoneNumbeTest" class="com.vitiger_crm.Orgtest.CreateOrganizationWithPhoneNumberTest"/>
+        <method signature="CreateContactWithSupportDateTest.createContactWithSupportDateTest()[pri:0, instance:com.vitiger_crm.contacttest.CreateContactWithSupportDateTest@6356695f]" name="createContactWithSupportDateTest" class="com.vitiger_crm.contacttest.CreateContactWithSupportDateTest"/>
+      </group> <!-- regression -->
+    </groups>
+    <test started-at="2026-09-18T15:24:37 IST" name="Test" finished-at="2026-09-18T15:26:11 IST" duration-ms="94691">
+      <class name="com.vitiger_crm.contacttest.CreateContactWithSupportDateTest">
+        <test-method is-config="true" signature="databaseConnectivity()[pri:0, instance:com.vitiger_crm.contacttest.CreateContactWithSupportDateTest@6356695f]" started-at="2026-09-18T15:24:36 IST" name="databaseConnectivity" finished-at="2026-09-18T15:24:37 IST" duration-ms="697" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- databaseConnectivity -->
+        <test-method is-config="true" signature="browserLaunching()[pri:0, instance:com.vitiger_crm.contacttest.CreateContactWithSupportDateTest@6356695f]" started-at="2026-09-18T15:24:37 IST" name="browserLaunching" finished-at="2026-09-18T15:24:40 IST" duration-ms="3343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunching -->
+        <test-method is-config="true" signature="loginToApp()[pri:0, instance:com.vitiger_crm.contacttest.CreateContactWithSupportDateTest@6356695f]" started-at="2026-09-18T15:24:40 IST" name="loginToApp" finished-at="2026-09-18T15:24:54 IST" duration-ms="14375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApp -->
+        <test-method signature="createContactWithSupportDateTest()[pri:0, instance:com.vitiger_crm.contacttest.CreateContactWithSupportDateTest@6356695f]" started-at="2026-09-18T15:24:54 IST" name="createContactWithSupportDateTest" finished-at="2026-09-18T15:25:04 IST" duration-ms="9735" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContactWithSupportDateTest -->
+        <test-method is-config="true" signature="logoutFromApp()[pri:0, instance:com.vitiger_crm.contacttest.CreateContactWithSupportDateTest@6356695f]" started-at="2026-09-18T15:25:04 IST" name="logoutFromApp" finished-at="2026-09-18T15:25:11 IST" duration-ms="6952" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApp -->
+        <test-method is-config="true" signature="browserClosing()[pri:0, instance:com.vitiger_crm.contacttest.CreateContactWithSupportDateTest@6356695f]" started-at="2026-09-18T15:25:11 IST" name="browserClosing" finished-at="2026-09-18T15:25:12 IST" duration-ms="504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClosing -->
+        <test-method is-config="true" signature="databaseClosure()[pri:0, instance:com.vitiger_crm.contacttest.CreateContactWithSupportDateTest@6356695f]" started-at="2026-09-18T15:26:11 IST" name="databaseClosure" finished-at="2026-09-18T15:26:11 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- databaseClosure -->
+      </class> <!-- com.vitiger_crm.contacttest.CreateContactWithSupportDateTest -->
+      <class name="com.vitiger_crm.Orgtest.CreateOrganizationWithPhoneNumberTest">
+        <test-method is-config="true" signature="browserLaunching()[pri:0, instance:com.vitiger_crm.Orgtest.CreateOrganizationWithPhoneNumberTest@6b927fb]" started-at="2026-09-18T15:25:42 IST" name="browserLaunching" finished-at="2026-09-18T15:25:44 IST" duration-ms="1992" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunching -->
+        <test-method is-config="true" signature="loginToApp()[pri:0, instance:com.vitiger_crm.Orgtest.CreateOrganizationWithPhoneNumberTest@6b927fb]" started-at="2026-09-18T15:25:44 IST" name="loginToApp" finished-at="2026-09-18T15:25:56 IST" duration-ms="12836" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApp -->
+        <test-method signature="createOrganizationWithPhoneNumbeTest()[pri:0, instance:com.vitiger_crm.Orgtest.CreateOrganizationWithPhoneNumberTest@6b927fb]" started-at="2026-09-18T15:25:56 IST" name="createOrganizationWithPhoneNumbeTest" finished-at="2026-09-18T15:26:04 IST" duration-ms="7224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrganizationWithPhoneNumbeTest -->
+        <test-method is-config="true" signature="logoutFromApp()[pri:0, instance:com.vitiger_crm.Orgtest.CreateOrganizationWithPhoneNumberTest@6b927fb]" started-at="2026-09-18T15:26:04 IST" name="logoutFromApp" finished-at="2026-09-18T15:26:11 IST" duration-ms="7297" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApp -->
+        <test-method is-config="true" signature="browserClosing()[pri:0, instance:com.vitiger_crm.Orgtest.CreateOrganizationWithPhoneNumberTest@6b927fb]" started-at="2026-09-18T15:26:11 IST" name="browserClosing" finished-at="2026-09-18T15:26:11 IST" duration-ms="419" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClosing -->
+      </class> <!-- com.vitiger_crm.Orgtest.CreateOrganizationWithPhoneNumberTest -->
+      <class name="com.vitiger_crm.Orgtest.CreateOrganizationWithIndustriesTest">
+        <test-method is-config="true" signature="browserLaunching()[pri:0, instance:com.vitiger_crm.Orgtest.CreateOrganizationWithIndustriesTest@a514af7]" started-at="2026-09-18T15:25:12 IST" name="browserLaunching" finished-at="2026-09-18T15:25:15 IST" duration-ms="3460" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunching -->
+        <test-method is-config="true" signature="loginToApp()[pri:0, instance:com.vitiger_crm.Orgtest.CreateOrganizationWithIndustriesTest@a514af7]" started-at="2026-09-18T15:25:15 IST" name="loginToApp" finished-at="2026-09-18T15:25:28 IST" duration-ms="12970" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApp -->
+        <test-method signature="createOrganizationWithIndustriesTest()[pri:0, instance:com.vitiger_crm.Orgtest.CreateOrganizationWithIndustriesTest@a514af7]" started-at="2026-09-18T15:25:28 IST" name="createOrganizationWithIndustriesTest" finished-at="2026-09-18T15:25:34 IST" duration-ms="6189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrganizationWithIndustriesTest -->
+        <test-method is-config="true" signature="logoutFromApp()[pri:0, instance:com.vitiger_crm.Orgtest.CreateOrganizationWithIndustriesTest@a514af7]" started-at="2026-09-18T15:25:34 IST" name="logoutFromApp" finished-at="2026-09-18T15:25:41 IST" duration-ms="6903" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApp -->
+        <test-method is-config="true" signature="browserClosing()[pri:0, instance:com.vitiger_crm.Orgtest.CreateOrganizationWithIndustriesTest@a514af7]" started-at="2026-09-18T15:25:41 IST" name="browserClosing" finished-at="2026-09-18T15:25:42 IST" duration-ms="416" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClosing -->
+      </class> <!-- com.vitiger_crm.Orgtest.CreateOrganizationWithIndustriesTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
