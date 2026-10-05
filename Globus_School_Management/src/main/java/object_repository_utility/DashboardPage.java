@@ -59,9 +59,6 @@ public class DashboardPage {
 	@FindBy(xpath = "//a[@href='/staff-directory']")
 	private WebElement stfdir;
 
-	@FindBy(xpath = "//a[@href='/bulk-operations']")
-	private WebElement bulkOperations;
-
 	@FindBy(xpath = "//a[@href='/calendar']")
 	private WebElement calendar;
 
@@ -85,7 +82,14 @@ public class DashboardPage {
 
 	@FindBy(xpath = "//a[@href='/certificates']")
 	private WebElement certificates;
-
+	
+	@FindBy(xpath = "//a[@href='/bulk-operations']")
+	private WebElement bulk; 
+	
+	public WebElement getBulk() {
+		return bulk;
+	}
+	
 	public WebElement getIdcards() {
 		return idcards;
 	}
@@ -194,10 +198,6 @@ public class DashboardPage {
 		return searchValue;
 	}
 
-	public WebElement getBulkOperations() {
-		return bulkOperations;
-	}
-
 	public void searchValue(String value) {
 		webutil = new WebDriverUtility(driver);
 		webutil.waitForVisibility(searchbar).sendKeys(value);
@@ -206,7 +206,7 @@ public class DashboardPage {
 
 	public void signout() {
 		webutil = new WebDriverUtility(driver);
-        webutil.waitForVisibility(signout);
+		webutil.waitForVisibility(signout);
 		webutil.mouseHover(signout);
 		webutil.click(signout);
 	}
